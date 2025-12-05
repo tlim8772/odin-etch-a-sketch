@@ -1,5 +1,5 @@
 let N = 32;
-let sz = 10;
+let sz = 5;
 let mode = 'sketch';
 const sketchpad = document.querySelector('#sketchpad');
 const resizeButton = document.querySelector('#resize');
@@ -21,7 +21,7 @@ function createSketchPad() {
                 'mouseover', 
                 () => cell.style.backgroundColor = mode === 'sketch' ? 'black' : 'white'
             );
-            cell.style.height = `${Math.floor(sz * 100 / N)}px`;
+            cell.style.height = `${Math.round(sz * 100 / N)}px`;
             cell.style.width = cell.style.height;
             row.appendChild(cell);
         }
