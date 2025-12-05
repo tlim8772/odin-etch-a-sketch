@@ -1,0 +1,26 @@
+body {
+    background-color: lightblue;
+}
+
+main {
+    text-align: center;
+}
+
+.sketchpad {
+    display: flex;
+    justify-content: start;
+
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.cell {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
