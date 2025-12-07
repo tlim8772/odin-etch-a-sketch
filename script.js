@@ -19,7 +19,9 @@ function createSketchPad() {
             cell.classList.add('cell');
             cell.addEventListener(
                 'mouseover', 
-                () => cell.style.backgroundColor = mode === 'sketch' ? 'black' : 'white'
+                (e) => {
+                    cell.style.backgroundColor = mode === 'sketch' ? 'black' : 'white';
+                }
             );
             cell.style.height = `${Math.round(sz * 100 / N)}px`;
             cell.style.width = cell.style.height;

@@ -6,10 +6,10 @@ main {
     text-align: center;
 }
 
-.sketchpad {
+#sketchpad {
     display: flex;
+    flex-direction: column;
     justify-content: start;
-
 }
 
 .row {
